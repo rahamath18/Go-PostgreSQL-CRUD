@@ -1,0 +1,13 @@
+CREATE TABLE tbl_employee
+(
+	id BIGSERIAL PRIMARY KEY,
+	salary numeric(8, 2),
+	code VARCHAR(6),
+	name VARCHAR(50),
+	additionalinformation JSONB, 
+	status INTEGER,
+	createdby VARCHAR(50),
+	createddate TIMESTAMP,
+	updatedby VARCHAR(50) NOT NULL DEFAULT '',
+	updateddate TIMESTAMP
+);
